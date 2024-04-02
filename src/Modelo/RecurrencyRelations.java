@@ -20,7 +20,7 @@ public class RecurrencyRelations {
         
 
         int tamanhoLista = numberList.length;
-        for (int i = 1; i <= tamanhoLista; i++) {
+        for (int i = 1; i < tamanhoLista; i++) {
             numberList[i]= 3* numberList[i-1] + i;
         }
 
@@ -29,7 +29,7 @@ public class RecurrencyRelations {
 
     public int second (int choose2){
         
-        for (int i = 2; i <= secondList.length; i++) {
+        for (int i = 2; i < secondList.length; i++) {
             secondList[i]=(i*i)*secondList[i-1]-3;
         }
         return secondList[choose2];
@@ -37,10 +37,10 @@ public class RecurrencyRelations {
 
     public int third (int choose3){
 
-        for (int i = 1; i <= thirdList.length; i++) {
+        for (int i = 1; i < thirdList.length; i++) {
             thirdList[i]=-2*(thirdList[i-1])+3;
         }
-        return fourthList[choose3];
+        return thirdList[choose3];
     }
 
     public int fourth (int choose4){
